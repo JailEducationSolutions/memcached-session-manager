@@ -52,17 +52,12 @@
 		</developer>
 	</developers>
 
-	<modules>
-		<module>core</module>
-		<module>tomcat6</module>
-		<module>tomcat7</module>
-		<module>tomcat8</module>
-		<module>kryo-serializer</module>
-		<module>javolution-serializer</module>
-		<module>xstream-serializer</module>
-		<module>flexjson-serializer</module>
-		<module>serializer-benchmark</module>
-	</modules>
+  <modules>
+    <module>core</module>
+    <module>tomcat6</module>
+    <module>tomcat7</module>
+    <module>tomcat8</module>
+  </modules>
 
 	<build>
 		<plugins>
@@ -116,7 +111,7 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<inherited>true</inherited>
 					<configuration>
-						<source>1.8</source>
+						<source>1.6</source>
 						<target>1.6</target>
 						<encoding>utf-8</encoding>
 					</configuration>
