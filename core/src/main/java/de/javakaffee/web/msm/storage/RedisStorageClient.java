@@ -178,7 +178,7 @@ public class RedisStorageClient implements StorageClient {
             try {
                 jedis = _pool.borrowInstance(false);
                 return execute(jedis);
-            } catch (JedisConnectionException e) {
+            } catch (JedisConnectionException | ClassCastException e) {
                 // Connection error occurred with this Jedis connection, so now make sure to get a known-good one
                 // The old connection is not given back to the pool since it is defunct anyway
                 if (_log.isDebugEnabled())
